@@ -15,7 +15,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { environment } from 'src/environments/environment';
 import { TimeagoModule } from 'ngx-timeago';
-
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -66,6 +67,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
       FormsModule,
       ReactiveFormsModule,
       BrowserAnimationsModule,
+      ButtonsModule.forRoot(),
+      PaginationModule.forRoot(),
       TimeagoModule.forRoot(),
       BsDropdownModule.forRoot(),
       BsDatepickerModule.forRoot(),
